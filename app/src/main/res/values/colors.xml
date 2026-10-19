@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6750A4</color>
+    <color name="colorPrimaryDark">#4F378B</color>
+    <color name="colorPrimaryLight">#EADDFF</color>
+    <color name="colorPrimaryContainer">#EADDFF</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnPrimaryContainer">#21005D</color>
+    <color name="colorSecondary">#00BCD4</color>
+    <color name="colorSecondaryContainer">#CCF8FF</color>
+    <color name="colorOnSecondaryContainer">#001F24</color>
+    <color name="colorTertiary">#FF9100</color>
+    <color name="colorSurface">#FFFBFE</color>
+    <color name="colorSurfaceVariant">#F3EDF7</color>
+    <color name="colorOnSurface">#1C1B1F</color>
+    <color name="colorOnSurfaceVariant">#49454F</color>
+    <color name="colorBackground">#FFFBFE</color>
+    <color name="colorSurfaceDark">#1C1B1F</color>
+    <color name="colorSurfaceVariantDark">#2B2930</color>
+    <color name="colorOnSurfaceDark">#E6E1E5</color>
+    <color name="colorError">#B3261E</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorOutline">#79747E</color>
+    <color name="colorOutlineVariant">#CAC4D0</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_30">#4DFFFFFF</color>
+    <color name="hud_green">#69F0AE</color>
+    <color name="hud_cyan">#40C4FF</color>
+    <color name="hud_yellow">#FFEA00</color>
+    <color name="splash_background">#0A0E1A</color>
+    <color name="splash_tagline">#7B78A8</color>
+    <color name="chip_bg_green">#1E69F0AE</color>
+    <color name="chip_bg_blue">#1E40C4FF</color>
+    <color name="chip_bg_purple">#1EEA80FC</color>
+</resources>

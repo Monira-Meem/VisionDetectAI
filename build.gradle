@@ -1,0 +1,32 @@
+// ================================================================
+// PROJECT-LEVEL build.gradle
+// Android Studio Panda 4 (2025.3.4) compatible
+//
+// Version Matrix:
+//   AGP       8.9.0          (ships with AS Panda)
+//   Gradle    8.11.1         (required min for AGP 8.9)
+//   Kotlin    2.0.21         (latest stable, Kotlin 2.x series)
+//   KSP       2.0.21-1.0.27  (MUST match Kotlin exactly)
+//   Hilt      2.52           (compatible with Kotlin 2.0.x)
+// ================================================================
+buildscript {
+    ext {
+        kotlin_version     = '2.0.21'
+        hilt_version       = '2.52'
+        nav_version        = '2.8.5'
+        room_version       = '2.6.1'
+        camerax_version    = '1.4.1'
+        lifecycle_version  = '2.8.7'
+        coroutines_version = '1.9.0'
+        tflite_version     = '2.14.0'
+    }
+}
+
+plugins {
+    id 'com.android.application'            version '8.9.0'         apply false
+    id 'com.android.library'               version '8.9.0'         apply false
+    id 'org.jetbrains.kotlin.android'      version '2.0.21'        apply false
+    id 'com.google.dagger.hilt.android'    version '2.52'          apply false
+    // KSP version MUST match Kotlin: 2.0.21 -> 2.0.21-1.0.27
+    id 'com.google.devtools.ksp'           version '2.0.21-1.0.27' apply false
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.VisionDetectAI" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#D0BCFF</item>
+        <item name="colorPrimaryContainer">#4F378B</item>
+        <item name="colorOnPrimary">#371E73</item>
+        <item name="colorOnPrimaryContainer">#EADDFF</item>
+        <item name="colorSecondary">#00E5FF</item>
+        <item name="colorTertiary">#FFB870</item>
+        <item name="colorSurface">@color/colorSurfaceDark</item>
+        <item name="colorSurfaceVariant">@color/colorSurfaceVariantDark</item>
+        <item name="colorOnSurface">@color/colorOnSurfaceDark</item>
+        <item name="colorOnSurfaceVariant">#CAC4D0</item>
+        <item name="android:colorBackground">@color/colorSurfaceDark</item>
+        <item name="colorError">#F2B8B5</item>
+        <item name="colorOutline">#938F99</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:navigationBarColor">@color/colorSurfaceDark</item>
+    </style>
+    <style name="Theme.VisionDetectAI.Splash" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="android:statusBarColor">@color/splash_background</item>
+        <item name="android:navigationBarColor">@color/splash_background</item>
+        <item name="android:windowBackground">@color/splash_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

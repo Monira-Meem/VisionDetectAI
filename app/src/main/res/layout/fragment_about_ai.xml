@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+            android:paddingHorizontal="8dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="About AI" android:textSize="20sp" android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"/>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:padding="16dp" android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" app:cardCornerRadius="20dp"
+                app:cardBackgroundColor="@color/colorPrimary">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="AI MODEL" android:textSize="10sp" android:textStyle="bold"
+                        android:textColor="@color/white_70" android:letterSpacing="0.15"/>
+                    <TextView android:id="@+id/tvModelName"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="SSD MobileNet V1" android:textSize="24sp" android:textStyle="bold"
+                        android:textColor="@color/white" android:layout_marginTop="4dp"/>
+                    <TextView android:id="@+id/tvFramework"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="TensorFlow Lite 2.14" android:textSize="13sp"
+                        android:textColor="@color/white_70" android:layout_marginTop="2dp"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="MODEL SPECIFICATIONS" android:textSize="10sp" android:textStyle="bold"
+                android:textColor="@color/colorPrimary" android:letterSpacing="0.15"
+                android:layout_marginBottom="8dp"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="?attr/colorSurfaceVariant">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Input Size"
+                            android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                        <TextView android:id="@+id/tvInputSize"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="300 x 300 px" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="?attr/colorOnSurface"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="?attr/colorOutlineVariant"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Quantization"
+                            android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                        <TextView android:id="@+id/tvQuantization"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="INT8 Quantized" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="?attr/colorOnSurface"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="?attr/colorOutlineVariant"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Detection Classes"
+                            android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                        <TextView android:id="@+id/tvClasses"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="80 COCO Classes" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="?attr/colorOnSurface"/>
+                    </LinearLayout>
+                    <View android:layout_width="match_parent" android:layout_height="1dp"
+                        android:background="?attr/colorOutlineVariant"/>
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="40dp"
+                        android:orientation="horizontal" android:gravity="center_vertical">
+                        <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                            android:layout_weight="1" android:text="Model Size"
+                            android:textSize="14sp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                        <TextView android:id="@+id/tvModelSize"
+                            android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="6.9 MB" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="?attr/colorOnSurface"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="DETECTION WORKFLOW" android:textSize="10sp" android:textStyle="bold"
+                android:textColor="@color/colorPrimary" android:letterSpacing="0.15"
+                android:layout_marginBottom="8dp"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp" app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="?attr/colorSurfaceVariant">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:id="@+id/tvWorkflowDescription"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Loading..." android:textSize="13sp"
+                        android:lineSpacingExtra="4dp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="FUTURE IMPROVEMENTS" android:textSize="10sp" android:textStyle="bold"
+                android:textColor="@color/colorPrimary" android:letterSpacing="0.15"
+                android:layout_marginBottom="8dp"/>
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp" app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="?attr/colorSurfaceVariant">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="16dp">
+                    <TextView android:id="@+id/tvFutureImprovements"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Loading..." android:textSize="13sp"
+                        android:lineSpacingExtra="6dp" android:textColor="?attr/colorOnSurfaceVariant"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

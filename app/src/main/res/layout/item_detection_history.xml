@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp" app:cardCornerRadius="16dp"
+    app:cardBackgroundColor="?attr/colorSurfaceVariant" app:cardElevation="2dp">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:padding="14dp">
+        <TextView android:id="@+id/tvTimestamp"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="Jan 01, 12:00:00" android:textSize="11sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnDelete"/>
+        <TextView android:id="@+id/tvObjectCount"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="0 objects detected" android:textSize="16sp" android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface" android:layout_marginTop="4dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTimestamp"
+            app:layout_constraintEnd_toStartOf="@id/btnDelete"/>
+        <TextView android:id="@+id/tvObjects"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:text="person, laptop, phone" android:textSize="12sp"
+            android:textColor="@color/colorPrimary" android:layout_marginTop="2dp"
+            android:maxLines="1" android:ellipsize="end"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvObjectCount"
+            app:layout_constraintEnd_toStartOf="@id/btnDelete"/>
+        <LinearLayout android:id="@+id/statsRow"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:orientation="horizontal" android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvObjects">
+            <com.google.android.material.chip.Chip android:id="@+id/tvConfidence"
+                android:layout_width="wrap_content" android:layout_height="28dp"
+                android:text="0% avg" android:textSize="11sp"
+                app:chipBackgroundColor="@color/chip_bg_green"
+                app:chipStrokeWidth="0dp" android:layout_marginEnd="6dp"/>
+            <com.google.android.material.chip.Chip android:id="@+id/tvFps"
+                android:layout_width="wrap_content" android:layout_height="28dp"
+                android:text="0 FPS" android:textSize="11sp"
+                app:chipBackgroundColor="@color/chip_bg_blue"
+                app:chipStrokeWidth="0dp" android:layout_marginEnd="6dp"/>
+            <com.google.android.material.chip.Chip android:id="@+id/tvInferenceTime"
+                android:layout_width="wrap_content" android:layout_height="28dp"
+                android:text="0ms" android:textSize="11sp"
+                app:chipBackgroundColor="@color/chip_bg_purple"
+                app:chipStrokeWidth="0dp"/>
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDelete"
+            style="@style/Widget.Material3.Button.IconButton"
+            android:layout_width="40dp" android:layout_height="40dp"
+            app:icon="@drawable/ic_delete" app:iconTint="@color/colorError"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

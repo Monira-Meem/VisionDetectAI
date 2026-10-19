@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment android:id="@+id/homeFragment"
+        android:name="com.visiondetect.ai.presentation.home.HomeFragment"
+        android:label="Home" tools:layout="@layout/fragment_home">
+        <action android:id="@+id/action_home_to_detection"  app:destination="@id/detectionFragment"
+            app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+        <action android:id="@+id/action_home_to_history"    app:destination="@id/historyFragment"
+            app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+        <action android:id="@+id/action_home_to_analytics"  app:destination="@id/analyticsFragment"
+            app:enterAnim="@anim/slide_in_right" app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left" app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+
+    <fragment android:id="@+id/detectionFragment"
+        android:name="com.visiondetect.ai.presentation.detection.DetectionFragment"
+        android:label="Detect" tools:layout="@layout/fragment_detection"/>
+
+    <fragment android:id="@+id/historyFragment"
+        android:name="com.visiondetect.ai.presentation.history.HistoryFragment"
+        android:label="History" tools:layout="@layout/fragment_history"/>
+
+    <fragment android:id="@+id/analyticsFragment"
+        android:name="com.visiondetect.ai.presentation.analytics.AnalyticsFragment"
+        android:label="Analytics" tools:layout="@layout/fragment_analytics"/>
+
+    <fragment android:id="@+id/settingsFragment"
+        android:name="com.visiondetect.ai.presentation.settings.SettingsFragment"
+        android:label="Settings" tools:layout="@layout/fragment_settings"/>
+
+    <fragment android:id="@+id/aboutAiFragment"
+        android:name="com.visiondetect.ai.presentation.about.AboutAiFragment"
+        android:label="About AI" tools:layout="@layout/fragment_about_ai"/>
+</navigation>

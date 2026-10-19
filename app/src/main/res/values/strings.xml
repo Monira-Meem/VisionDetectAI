@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VisionDetect AI</string>
+    <string name="app_tagline">Real-time AI Object Detection</string>
+    <string name="detecting">Detecting…</string>
+    <string name="initializing_ai">Initializing AI Model…</string>
+    <string name="ai_ready">AI Ready</string>
+    <string name="start_detection">&#9654;  Launch Camera</string>
+    <string name="detection_saved">&#10003; Detection saved to history</string>
+    <string name="camera_permission_required">Camera permission is required</string>
+    <string name="grant">Grant</string>
+    <string name="cancel">Cancel</string>
+    <string name="clear_all">Clear All</string>
+    <string name="no_history_title">No detections yet</string>
+    <string name="no_history_subtitle">Start detection and save snapshots to build your history</string>
+    <string name="no_analytics_title">No data yet</string>
+    <string name="no_analytics_subtitle">Run some detections to see analytics</string>
+    <string name="cd_logo">VisionDetect AI Logo</string>
+    <string name="cd_back">Back</string>
+    <string name="cd_delete">Delete record</string>
+    <string name="cd_camera_preview">Camera preview</string>
+</resources>
